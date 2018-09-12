@@ -35,11 +35,17 @@ public class HitungFibonacci {
         return hasil[n - 1];
     }
     
+    private static void tampilHasil(int n, BigInteger hasil)
+    {
+        System.out.println("Bilangan Fibonacci Ke-" + n + " : " + hasil);
+    }
+    
     public static void main(String[] args) 
     {
         String identitas = "Muhammad Zidan Rakhi Ismed / X - RPL 3 / 26";
         tampilJudul(identitas);
         int n = tampilInput();
         BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
     }
 }
