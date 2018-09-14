@@ -24,4 +24,11 @@ public class Tugas1 {
             System.out.println("Pecahan Rp" + pecahan[i] + " : " + a);
         }
     }
+    
+    public static void main(String[] args) 
+    {                
+        int[] pecahan = new int[] {5000, 2000, 1000, 500, 100};
+        int uang = InputUser();
+        hitung(uang,pecahan);
+    }
 }
