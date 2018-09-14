@@ -10,5 +10,18 @@ public class Tugas1 {
         return uang;
     }
     
-    
+    public static void hitung(int uang, int[] pecahan)
+    {
+        for (int i = 0;i < pecahan.length; i++) 
+        {
+            int a = 0;
+            while(uang >= pecahan[i])
+            {
+                uang = uang - pecahan[i];
+                a++;
+            }            
+        
+            System.out.println("Pecahan Rp" + pecahan[i] + " : " + a);
+        }
+    }
 }
